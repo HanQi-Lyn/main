@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funny Web App</title>
+    <title>HANQI LIN Web App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,4 +43,17 @@
         funnyButton.addEventListener('click', () => {
             const colors = ['#e74c3c', '#8e44ad', '#3498db', '#1abc9c', '#f39c12', '#d35400'];
             const emojis = ['😂', '🤣', '😜', '🤪', '😎', '🥳', '🤯', '😆', '😁'];
+            
+            // Change text color randomly
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            funnyText.style.color = randomColor;
+
+            // Change emoji randomly
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+            funnyText.innerHTML = `Click the button to have some fun! ${randomEmoji}`;
+        });
+    </script>
+</body>
+</html>
+
             
