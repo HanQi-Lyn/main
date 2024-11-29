@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            text-align: center;
+            margin-top: 100px;
+        }
+        #funnyText {
+            font-size: 2em;
+            color: #333;
+            transition: color 0.5s;
+        }
+        #funnyButton {
+            padding: 15px 25px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #funnyButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Funny Web App!</h1>
+    <p id="funnyText">Click the button to have some fun! 😄</p>
+    <button id="funnyButton">Make Me Laugh!</button>
+
+    <script>
+        const funnyButton = document.getElementById('funnyButton');
+        const funnyText = document.getElementById('funnyText');
+
+        funnyButton.addEventListener('click', () => {
+            const colors = ['#e74c3c', '#8e44ad', '#3498db', '#1abc9c', '#f39c12', '#d35400'];
+            const emojis = ['😂', '🤣', '😜', '🤪', '😎', '🥳', '🤯', '😆', '😁'];
+            
